@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: $pink-medium;
+  font-family: "Kumbh Sans", sans-serif;
+  p {
+    font-size: 0.75rem;
+    margin: 0.25rem;
+  }
+  .contact-socials {
+    margin-right: 0.25rem;
+    .social-icon {
+      margin-right: 1rem;
+    }
+  }
+}

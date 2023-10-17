@@ -10,6 +10,43 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12rem;
+}
+.main-container .cta {
+  display: flex;
+  justify-content: center;
+}
+.main-container .cta a button {
+  background-color: #17636b;
+  border: 2px solid #ebd3cf;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+}
+.main-container .catchphrase {
+  width: 8rem;
+  font-family: "B612", sans-serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.main-container .catchphrase p {
+  margin: 0;
+}
+.main-container .catchphrase .catchphrase-row2 span {
+  font-size: 1.25rem;
+}
+.main-container .catchphrase .catchphrase-row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,24 +59,6 @@ header h1 {
 }
 header .burger-icon {
   margin: 0 0.5rem;
-}
-
-.catchphrase {
-  width: 8rem;
-  font-family: "B612", sans-serif;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-left: 3rem;
-}
-.catchphrase p {
-  margin: 0;
-}
-.catchphrase .catchphrase-row2 span {
-  font-size: 1.25rem;
-}
-.catchphrase .catchphrase-row3 {
-  display: flex;
-  justify-content: flex-end;
 }
 
 footer {
