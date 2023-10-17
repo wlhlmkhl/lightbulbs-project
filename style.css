@@ -1,1 +1,64 @@
-/*# sourceMappingURL=style.css.map */
+/*
+fonts for headings etc.
+font-family: "B612", sans-serif;
+font-family: "B612 Mono", monospace;
+font-family: "Kumbh Sans", sans-serif;
+*/
+body {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: #a5cfd3;
+}
+header h1 {
+  font-family: "B612", sans-serif;
+}
+header .burger-icon {
+  margin: 0 0.5rem;
+}
+
+.catchphrase {
+  width: 8rem;
+  font-family: "B612", sans-serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.catchphrase p {
+  margin: 0;
+}
+.catchphrase .catchphrase-row2 span {
+  font-size: 1.25rem;
+}
+.catchphrase .catchphrase-row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fc8e8b;
+  font-family: "Kumbh Sans", sans-serif;
+}
+footer p {
+  font-size: 0.75rem;
+  margin: 0.25rem;
+}
+footer .contact-socials {
+  margin-right: 0.25rem;
+}
+footer .contact-socials .social-icon {
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

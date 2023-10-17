@@ -1,0 +1,57 @@
+body {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: $blue-light;
+  h1 {
+    font-family: "B612", sans-serif;
+  }
+  .burger-icon {
+    margin: 0 0.5rem;
+  }
+}
+.catchphrase {
+    width: 8rem;
+    font-family: "B612", sans-serif;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    p {
+            margin: 0;
+        }
+    .catchphrase-row2 {
+        span {
+            font-size: 1.25rem;
+        }
+    }
+    .catchphrase-row3 {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: $pink-medium;
+  font-family: "Kumbh Sans", sans-serif;
+  p {
+    font-size: 0.75rem;
+    margin: 0.25rem;
+  }
+  .contact-socials {
+    margin-right: 0.25rem;
+    .social-icon {
+      margin-right: 1rem;
+    }
+  }
+}
