@@ -73,12 +73,15 @@ footer {
   background-color: #fc8e8b;
   font-family: "Kumbh Sans", sans-serif;
 }
-footer p {
+footer address {
   font-size: 0.75rem;
   margin: 0.25rem;
 }
+footer address p {
+  margin: 0;
+}
 footer .contact-socials {
-  margin-right: 0.25rem;
+  width: 50%;
 }
 footer .contact-socials .social-icon {
   margin-right: 1rem;

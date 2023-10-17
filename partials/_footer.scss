@@ -6,12 +6,15 @@ footer {
   position: absolute;
   background-color: $pink-medium;
   font-family: "Kumbh Sans", sans-serif;
-  p {
+  address {
     font-size: 0.75rem;
     margin: 0.25rem;
+    p {
+        margin: 0;
+    }
   }
   .contact-socials {
-    margin-right: 0.25rem;
+    width: 50%;
     .social-icon {
       margin-right: 1rem;
     }
