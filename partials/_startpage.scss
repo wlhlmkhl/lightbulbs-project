@@ -13,12 +13,12 @@ body {
     display: flex;
     justify-content: center;
     a button {
-        background-color: $blue-dark;
-        border: 2px solid $grayish;
-        border-radius: 1rem;
-        height: 4rem;
-        padding: 1rem;
-        color: $grayish;
+      background-color: $blue-dark;
+      border: none;
+      border-radius: 1rem;
+      height: 4rem;
+      padding: 1rem;
+      color: $grayish;
     }
   }
   .catchphrase {
