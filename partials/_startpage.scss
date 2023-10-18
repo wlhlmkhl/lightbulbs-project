@@ -1,0 +1,43 @@
+body {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12rem;
+  .cta {
+    display: flex;
+    justify-content: center;
+    a button {
+      background-color: $blue-dark;
+      border: none;
+      border-radius: 1rem;
+      height: 4rem;
+      padding: 1rem;
+      color: $grayish;
+    }
+  }
+  .catchphrase {
+    width: 8rem;
+    font-family: "B612", sans-serif;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    p {
+      margin: 0;
+    }
+    .catchphrase-row2 {
+      span {
+        font-size: 1.25rem;
+      }
+    }
+    .catchphrase-row3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
