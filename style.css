@@ -109,6 +109,9 @@ footer .footer-bottom ul li {
 footer p {
   color: #17636b;
 }
+footer > p {
+  font-size: 0.75rem;
+}
 
 /*
 footer {

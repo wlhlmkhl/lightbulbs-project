@@ -42,6 +42,9 @@ footer {
   p {
     color: $blue-dark;
   }
+  > p {
+    font-size: 0.75rem;
+  }
 }
 /*
 footer {
