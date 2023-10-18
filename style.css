@@ -4,63 +4,19 @@ font-family: "B612", sans-serif;
 font-family: "B612 Mono", monospace;
 font-family: "Kumbh Sans", sans-serif;
 */
-.startpage {
-  background-image: url(/assets/img/mobile-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.startpage .main-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12rem;
-}
-.startpage .main-container .cta {
-  display: flex;
-  justify-content: center;
-}
-.startpage .main-container .cta a button {
-  background-color: #17636b;
-  border: none;
-  border-radius: 1rem;
-  height: 4rem;
-  padding: 1rem;
-  color: #ebd3cf;
-}
-.startpage .main-container .catchphrase {
-  width: 8rem;
-  font-family: "B612", sans-serif;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-left: 3rem;
-}
-.startpage .main-container .catchphrase p {
-  margin: 0;
-}
-.startpage .main-container .catchphrase .catchphrase-row2 span {
-  font-size: 1.25rem;
-}
-.startpage .main-container .catchphrase .catchphrase-row3 {
-  display: flex;
-  justify-content: flex-end;
-}
-
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   background-color: #b3d7db;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 header h1 {
   font-family: "B612 Mono", monospace;
   color: #17636b;
-}
-header .burger-icon {
-  margin: 0 0.5rem;
 }
 
 footer {
@@ -167,4 +123,87 @@ footer {
     gap: 1rem;
   }
 }
-*//*# sourceMappingURL=style.css.map */
+*/
+header #myLinks {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  background-color: #b3d7db;
+  width: 100%;
+  z-index: 10;
+}
+
+header .icon:not(a) {
+  color: white;
+  padding: 1rem;
+}
+
+header a {
+  color: #17636b;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+header a.icon {
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header .icon:hover,
+header a:hover {
+  background-color: #029eac;
+  color: #17636b;
+}
+
+.startpage {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.startpage .main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12rem;
+}
+.startpage .main-container .cta {
+  display: flex;
+  justify-content: center;
+}
+.startpage .main-container .cta a button {
+  background-color: #17636b;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+}
+.startpage .main-container .catchphrase {
+  width: 8rem;
+  font-family: "B612", sans-serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  color: #ff716f;
+}
+.startpage .main-container .catchphrase p {
+  margin: 0;
+}
+.startpage .main-container .catchphrase .catchphrase-row2 span {
+  font-size: 1.25rem;
+}
+.startpage .main-container .catchphrase .catchphrase-row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.services-page {
+  background-image: linear-gradient(#b3d7db, #f3a8a3);
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
