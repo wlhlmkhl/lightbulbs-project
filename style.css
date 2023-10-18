@@ -31,6 +31,12 @@ footer {
   padding-top: 1rem;
   border-top: 2px solid #ff716f;
 }
+footer .contact-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 footer .bulb-logo {
   height: 2rem;
 }

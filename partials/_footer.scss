@@ -9,6 +9,12 @@ footer {
   gap: 1rem;
   padding-top: 1rem;
   border-top: 2px solid $pink-dark;
+  .contact-socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
   .bulb-logo {
     height: 2rem;
   }
