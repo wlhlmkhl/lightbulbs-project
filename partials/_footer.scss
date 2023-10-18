@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background-color: $pink-medium;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: $font3;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,11 @@ footer {
   .footer-top {
     display: flex;
     align-items: center;
-    font-family: "B612", sans-serif;
+    font-family: $font1;
     color: $blue-dark;
+    h3 {
+      font-family: $font2;
+    }
   }
   .footer-bottom {
     padding: 1rem;

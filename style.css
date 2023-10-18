@@ -4,24 +4,23 @@ font-family: "B612", sans-serif;
 font-family: "B612 Mono", monospace;
 font-family: "Kumbh Sans", sans-serif;
 */
-body {
+.startpage {
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.main-container {
+.startpage .main-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 12rem;
 }
-.main-container .cta {
+.startpage .main-container .cta {
   display: flex;
   justify-content: center;
 }
-.main-container .cta a button {
+.startpage .main-container .cta a button {
   background-color: #17636b;
   border: none;
   border-radius: 1rem;
@@ -29,20 +28,20 @@ body {
   padding: 1rem;
   color: #ebd3cf;
 }
-.main-container .catchphrase {
+.startpage .main-container .catchphrase {
   width: 8rem;
   font-family: "B612", sans-serif;
   font-size: 2rem;
   margin-top: 3rem;
   margin-left: 3rem;
 }
-.main-container .catchphrase p {
+.startpage .main-container .catchphrase p {
   margin: 0;
 }
-.main-container .catchphrase .catchphrase-row2 span {
+.startpage .main-container .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
 }
-.main-container .catchphrase .catchphrase-row3 {
+.startpage .main-container .catchphrase .catchphrase-row3 {
   display: flex;
   justify-content: flex-end;
 }
@@ -52,12 +51,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  background-color: #B3D7DB;
+  background-color: #b3d7db;
   position: sticky;
   top: 0;
 }
 header h1 {
-  font-family: "B612", sans-serif;
+  font-family: "B612 Mono", monospace;
   color: #17636b;
 }
 header .burger-icon {
@@ -84,6 +83,9 @@ footer .footer-top {
   align-items: center;
   font-family: "B612", sans-serif;
   color: #17636b;
+}
+footer .footer-top h3 {
+  font-family: "B612 Mono", monospace;
 }
 footer .footer-bottom {
   padding: 1rem;
