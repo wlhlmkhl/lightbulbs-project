@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 fonts for headings etc.
 font-family: "B612", sans-serif;
@@ -165,10 +166,16 @@ header a:hover {
   color: #17636b;
 }
 
+/* Måste fixa nesting här */
 .startpage {
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 1080px) {
+  .startpage {
+    background-image: url(/assets/img/desktop-background.jpg);
+  }
 }
 .startpage .main-container {
   height: 100vh;
@@ -176,6 +183,14 @@ header a:hover {
   flex-direction: column;
   justify-content: flex-start;
   gap: 12rem;
+}
+@media (min-width: 1080px) {
+  .startpage .main-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+  }
 }
 .startpage .main-container .cta {
   display: flex;
@@ -188,6 +203,8 @@ header a:hover {
   height: 4rem;
   padding: 1rem;
   color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.25rem #17636b);
 }
 .startpage .main-container .catchphrase {
   width: 8rem;
@@ -196,12 +213,23 @@ header a:hover {
   margin-top: 3rem;
   margin-left: 3rem;
   color: #ff716f;
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
+}
+@media (min-width: 1080px) {
+  .startpage .main-container .catchphrase {
+    font-size: 6rem;
+  }
 }
 .startpage .main-container .catchphrase p {
   margin: 0;
 }
 .startpage .main-container .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
+}
+@media (min-width: 1080px) {
+  .startpage .main-container .catchphrase .catchphrase-row2 span {
+    font-size: 3.25rem;
+  }
 }
 .startpage .main-container .catchphrase .catchphrase-row3 {
   display: flex;
