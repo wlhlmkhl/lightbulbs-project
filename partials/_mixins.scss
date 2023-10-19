@@ -3,3 +3,14 @@
         @content;
     }
 }
+@mixin button {
+       background-color: $blue-dark;
+        opacity: 0.6;
+        border: none;
+        border-radius: 1rem;
+        height: 4rem;
+        padding: 1rem;
+        color: $grayish;
+        font-size: 1.25rem;
+        filter: drop-shadow(0 0 0.125rem $blue-dark);
+}
