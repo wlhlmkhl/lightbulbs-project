@@ -1,0 +1,31 @@
+header #myLinks {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  background-color: $blue-light;
+  width: 100%;
+  z-index: 10;
+}
+header .icon:not(a) {
+  color: white;
+  padding: 1rem;
+}
+header a {
+  color: $blue-dark;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+header a.icon {
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .icon:hover,
+header a:hover {
+  background-color: $blue-medium;
+  color: $blue-dark;
+}
+// Måste fixa nesting här
