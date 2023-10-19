@@ -1,0 +1,46 @@
+.formContainer{
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.contactForm{
+    margin: 0 auto;
+}
+#contactTitle, #introText{
+    text-align: center;
+    margin: 1em auto;
+}
+.dividerContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+
+}
+.divider{
+    text-align: center;
+    width: 90%;
+    border-bottom: 5px solid black
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    }
+
+.infoContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+.info{
+        font-size: 20px;
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        text-align: center;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
