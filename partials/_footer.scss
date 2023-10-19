@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background-color: $pink-medium;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: $font3;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -9,14 +9,23 @@ footer {
   gap: 1rem;
   padding-top: 1rem;
   border-top: 2px solid $pink-dark;
+  .contact-socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
   .bulb-logo {
     height: 2rem;
   }
   .footer-top {
     display: flex;
     align-items: center;
-    font-family: "B612", sans-serif;
+    font-family: $font1;
     color: $blue-dark;
+    h3 {
+      font-family: $font2;
+    }
   }
   .footer-bottom {
     padding: 1rem;
@@ -46,56 +55,56 @@ footer {
     font-size: 0.75rem;
   }
 }
-/*
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: $pink-medium;
-  font-family: "Kumbh Sans", sans-serif;
-  section {
-    border-top: 2px solid $pink-dark;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h3 {
-      font-size: 1rem;
-      font-family: "B612", sans-serif;
-      color: $blue-dark;
-    }
-    span {
-      .bulb-logo {
-        height: 2rem;
-      }
-    }
-    address {
-      font-size: 0.75rem;
-      margin: 0.25rem;
-      p {
-        margin: 0;
-      }
-    }
-    .contact-socials {
-      .social-icon {
-        margin-right: 1rem;
-      }
-    }
-  }
-  .footer-middle {
-    ul {
-      list-style: none;
-      color: $blue-dark;
-      li {
-        text-align: center;
-      }
-    }
-  }
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-*/
+
+// footer {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   background-color: $pink-medium;
+//   font-family: "Kumbh Sans", sans-serif;
+//   section {
+//     border-top: 2px solid $pink-dark;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     h3 {
+//       font-size: 1rem;
+//       font-family: "B612", sans-serif;
+//       color: $blue-dark;
+//     }
+//     span {
+//       .bulb-logo {
+//         height: 2rem;
+//       }
+//     }
+//     address {
+//       font-size: 0.75rem;
+//       margin: 0.25rem;
+//       p {
+//         margin: 0;
+//       }
+//     }
+//     .contact-socials {
+//       .social-icon {
+//         margin-right: 1rem;
+//       }
+//     }
+//   }
+//   .footer-middle {
+//     ul {
+//       list-style: none;
+//       color: $blue-dark;
+//       li {
+//         text-align: center;
+//       }
+//     }
+//   }
+//   .footer-bottom {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+//   }
+// }
+
