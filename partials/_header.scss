@@ -7,6 +7,22 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  @include desktop {
+    justify-content: space-between;
+    .icon {
+      display: none;
+    }
+  }
+  .desktop-nav {
+    display: none;
+    @include desktop {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: $blue-dark;
+    }
+  }
   h1 {
     font-family: $font2;
     color: $blue-dark;
