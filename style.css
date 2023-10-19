@@ -174,6 +174,7 @@ body {
 
 .main-container {
   height: 100vh;
+  min-width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -193,7 +194,7 @@ body {
 }
 .About_us_textbox p {
   text-align: center;
-  margin: 8px;
+  margin: 10px;
 }
 
 .employees_container {
