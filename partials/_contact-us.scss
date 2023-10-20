@@ -1,21 +1,57 @@
+.containerText{
+    text-align: center;
+    margin: 1em auto;
+}
+
+// -----------CSS for Form---------------
+$borderRadius: 20px;
+
 .formContainer{
     width: 100%;
     margin: auto;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
+    // border: 2px darkblue solid;
+    padding: 5px;
 }
+
 .contactForm{
+    width: 500px;
+    height: 50vh;
     margin: 0 auto;
-}
-#contactTitle, #introText{
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 1em auto;
 }
+#emailForm{
+    border-radius: $borderRadius;
+    width: 90%;
+    margin: 10px 0 0 0;
+}
+#subjectForm{
+    margin: 10px 0 0 0;
+    text-align: center;
+    border-radius: $borderRadius;
+    width: 90;
+}
+#textForm{
+    margin: 10px 0 0 0;
+    border-radius: $borderRadius;
+
+}
+#submitButton{
+    margin: 10px 0 0 0;
+border-radius: $borderRadius;
+}
+
+
+// --------------CSS for Divider + IMG------------
 .dividerContainer{
     display: flex;
     justify-content: center;
     padding: 2em 0 2em 0;
+    border: 1px pink solid;
 
 }
 .divider{
@@ -26,21 +62,35 @@
 .imgContainer{
     display: flex;
     justify-content: center;
+    padding: 2rem 0;
     }
 
+
+.officeJPG{
+    width: 85%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+// ----------INFO BOX-------------
 .infoContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-.info{
-        font-size: 20px;
-        width: 300px;
-        height: 200px;
-        background-color: white;
-        text-align: center;
-        border-radius: 20px;
-        padding: 2rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.infoBox{
+width: 300px;
+height: 200px;
+border: 1px white solid;
+background-color: white;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.adress, .telephone, .email {
+    padding: 0 2px;
+}

@@ -26,18 +26,22 @@
         </nav>
     </header>
     <main>
+        <!-- TITLE  -->
         <div class="containerText">
             <h2 id="contactTitle">Contact Us!</h2>
             <p id="introText">Please fill out this form and wwe will reach out shortly. </p>
         </div>
+
+        <!-- CONTACT FORM -->
+
         <div class="formContainer">
             <form class="contactForm" action="post" action="#" >
                 <fieldset>
-                    <label for="email">Enter Email: <input id="email" name="email" type="email" required /></label>           
+                    <label for="emailForm">Enter Email: <br><input id="email" name="email" type="email" required /></label>           
                 </fieldset>
                     <fieldset>
-                        <label for="formSubject">
-                            <select id="formSubject" name="formSubject">
+                        <label for="subjectForm">
+                            <select id="subjectForm" name="formSubject">
                               <option value="">Select Subject</option>
                               <option value="1">Purchase of service/product</option>
                               <option value="2">Questions about the company</option>
@@ -47,14 +51,16 @@
                         </label> 
                     </fieldset>
                     <fieldset>
-                        <label for="contactText"> Enter Text:
+                        <label for="textForm"> Enter Text: <br>
                             <textarea id="contactText" name="contactText" rows="3" cols="30" placeholder="I wonder if lightbulbs..."></textarea>
                           </label>
                     </fieldset>
-                    <input  id="formSubmit" type="submit" value="Submit" />
+                    <input  id="submitButton" type="submit" value="Submit" />
                 
             </form>
         </div>
+
+        <!-- Office divider + IMG-->
         <div class="officeContainer">
             <div class="dividerContainer">
                 <div class="divider">
@@ -62,18 +68,26 @@
                 </div>
             </div>
             <div class="imgContainer">
-                <img src="#" alt="picture of office-buildning">
+                <img class="officeJPG" src="assets/img/office.jpg" alt="picture of office-buildning">
             </div>
-            <div class="infoContainer">
-                <div class="info">
-                    <p>Lampgårdsgatan 12, <br> SE-114 14 Stockholm </p>
-                    <p>070-333 44 55</p>
-                    <p>hello@lightbulbs.com</p>
-                </div>
+       </div>
+
+       <!-- info box  -->
+       <div class="infoContainer">
+        <div class="infoBox">
+            <div class="adress">
+            <p>
+              <img src="assets/logos-icons/needle-icon.svg" alt=""> Lampgårdsgatan 12, Stockholm</p>
             </div>
-
-
+            <div class="telephone">
+                <p><img src="assets/logos-icons/phone-icon.svg" alt=""><a href="tel:+0703334455">070- 333 44 55</a></p>
+            </div>
+            <div class="email">
+                <p><img src="assets/logos-icons/envelope-icon.svg" alt=""><a href="mailto:hello@lightbulbs.com">hello@lightbulbs.com</a></p>
+            </div>
         </div>
+        
+    </div>
 
 
       
