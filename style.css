@@ -111,6 +111,36 @@ body {
   justify-content: flex-start;
 }
 
+.catchphrase {
+  width: 8rem;
+  font-family: "B612", sans-serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  color: #ff716f;
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
+}
+@media (min-width: 1080px) {
+  .catchphrase {
+    font-size: 6rem;
+  }
+}
+.catchphrase p {
+  margin: 0;
+}
+.catchphrase .catchphrase-row2 span {
+  font-size: 1.25rem;
+}
+@media (min-width: 1080px) {
+  .catchphrase .catchphrase-row2 span {
+    font-size: 3.25rem;
+  }
+}
+.catchphrase .catchphrase-row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .About_us_textbox {
   width: 100%;
   height: 40%;

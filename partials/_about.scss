@@ -15,6 +15,34 @@ body {
     
 }
 
+.catchphrase {
+    width: 8rem;
+    font-family: $font1;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: $pink-dark;
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
+    @include desktop {
+      font-size: 6rem;
+    }
+    p {
+      margin: 0;
+    }
+    .catchphrase-row2 {
+      span {
+        font-size: 1.25rem;
+        @include desktop {
+          font-size: 3.25rem;
+        }
+      }
+    }
+    .catchphrase-row3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
 .About_us_textbox {
     width: 100%;
     height: 40%;
