@@ -223,7 +223,6 @@ header a:hover {
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background: red;
 }
 @media (min-width: 1080px) {
   .startpage {

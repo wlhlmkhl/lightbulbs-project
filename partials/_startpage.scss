@@ -2,7 +2,6 @@
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background:red;
   @include desktop {
     background-image: url(/assets/img/desktop-background.jpg);
   }
