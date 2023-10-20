@@ -11,7 +11,7 @@ header {
   margin: 0;
   background-color: #b3d7db;
   position: sticky;
-  top: 10;
+  top: 0;
   z-index: 10;
 }
 @media (min-width: 1080px) {
@@ -103,8 +103,42 @@ body {
   background-repeat: no-repeat;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  background-color: #b3d7db;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+@media (min-width: 1080px) {
+  header {
+    justify-content: space-between;
+  }
+  header .icon {
+    display: none;
+  }
+}
+header .desktop-nav {
+  display: none;
+}
+@media (min-width: 1080px) {
+  header .desktop-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #17636b;
+  }
+}
+header h1 {
+  font-family: "B612 Mono", monospace;
+  color: #17636b;
+}
+
 .main-container {
-  height: 100vh;
   min-width: auto;
   display: flex;
   flex-direction: column;
@@ -115,8 +149,8 @@ body {
   width: 8rem;
   font-family: "B612", sans-serif;
   font-size: 2rem;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   margin-left: 3rem;
   color: #ff716f;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
@@ -149,9 +183,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 2px black solid;
+  padding: 1rem;
 }
 .About_us_textbox h3 {
   text-align: center;
@@ -176,13 +208,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .employees_container .employees_box_one {
   width: 100%;
   height: 450px;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   background: #b3d7db;
 }
 .employees_container .employees_box_one .right_box {
