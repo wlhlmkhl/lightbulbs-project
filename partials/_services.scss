@@ -2,4 +2,84 @@
   background-image: linear-gradient($blue-light, $pink-light);
   background-size: cover;
   background-repeat: no-repeat;
+  main {
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      @include desktop {
+        flex-direction: row;
+      }
+    }
+    article {
+      margin: 0 1rem 3rem 1rem;
+      @include desktop {
+        width: 25%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+    img {
+      margin: 0 1rem;
+    }
+    h2 {
+      font-family: $font3;
+      color: $blue-dark;
+      margin: 3rem 0;
+      font-size: 1.75rem;
+      text-align: center;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    h3 {
+      font-family: $font3;
+      color: $pink-dark;
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      @include desktop {
+        height: 4rem;
+      }
+    }
+    article:nth-of-type(2) > h3,
+    article:nth-of-type(4) > h3 {
+      @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+    p {
+      color: $blue-dark;
+      text-align: left;
+    }
+    .contact-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+      @include desktop {
+        display: none;
+      }
+      button {
+        @include button;
+      }
+    }
+    .contact-button-desktop {
+      display: none;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+      button {
+        @include button;
+        width: 10rem;
+      }
+    }
+  }
 }
