@@ -27,5 +27,9 @@ header .icon:hover,
 header a:hover {
   background-color: $blue-medium;
   color: $blue-dark;
+  @include desktop {
+    background-color: transparent;
+    color: $pink-dark;
+  }
 }
 // Måste fixa nesting här
