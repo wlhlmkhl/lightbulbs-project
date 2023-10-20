@@ -1,16 +1,30 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   background-color: $blue-light;
   position: sticky;
   top: 0;
-  h1 {
-    font-family: "B612", sans-serif;
-    color: $blue-dark;
+  z-index: 10;
+  @include desktop {
+    justify-content: space-between;
+    .icon {
+      display: none;
+    }
   }
-  .burger-icon {
-    margin: 0 0.5rem;
+  .desktop-nav {
+    display: none;
+    @include desktop {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: $blue-dark;
+    }
+  }
+  h1 {
+    font-family: $font2;
+    color: $blue-dark;
   }
 }
