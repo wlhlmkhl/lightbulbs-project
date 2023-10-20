@@ -35,13 +35,6 @@ footer {
     @include desktop {
       justify-content: center;
     }
-    // @include desktop {
-    //   ul {
-    //     display: flex;
-    //     width: 25%;
-    //     justify-content: space-evenly;
-    //   }
-    // }
     address {
       font-size: 0.85rem;
       margin: 0.25rem;
@@ -53,9 +46,12 @@ footer {
         color: $blue-dark;
       }
     }
-    ul {
+    ul   {
       list-style: none;
-      color: $blue-dark;
+      a {
+        color: $blue-dark;
+        text-decoration: none;
+      }
       li {
         text-align: center;
       }

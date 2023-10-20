@@ -34,6 +34,7 @@ header .desktop-nav {
     align-items: center;
     gap: 2rem;
     color: #17636b;
+    font-size: 1.25rem;
   }
 }
 header h1 {
@@ -97,7 +98,10 @@ footer .footer-bottom address p {
 }
 footer .footer-bottom ul {
   list-style: none;
+}
+footer .footer-bottom ul a {
   color: #17636b;
+  text-decoration: none;
 }
 footer .footer-bottom ul li {
   text-align: center;
@@ -330,19 +334,21 @@ header a:hover {
 @media (min-width: 1080px) {
   .services-page main article {
     width: 25%;
-    height: 30rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 .services-page main img {
   margin: 0 1rem;
 }
 .services-page main h2 {
+  font-family: "Kumbh Sans", sans-serif;
   color: #17636b;
   margin: 3rem 0;
   font-size: 1.75rem;
+  text-align: center;
 }
 @media (min-width: 1080px) {
   .services-page main h2 {
@@ -351,6 +357,7 @@ header a:hover {
   }
 }
 .services-page main h3 {
+  font-family: "Kumbh Sans", sans-serif;
   color: #ff716f;
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -363,8 +370,8 @@ header a:hover {
   }
 }
 @media (min-width: 1080px) {
-  .services-page main article:nth-of-type(1) > h3,
-  .services-page main article:nth-of-type(3) > h3 {
+  .services-page main article:nth-of-type(2) > h3,
+  .services-page main article:nth-of-type(4) > h3 {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -378,6 +385,11 @@ header a:hover {
   justify-content: center;
   margin-top: 3rem;
 }
+@media (min-width: 1080px) {
+  .services-page main .contact-button {
+    display: none;
+  }
+}
 .services-page main .contact-button button {
   background-color: #17636b;
   opacity: 0.6;
@@ -388,4 +400,26 @@ header a:hover {
   color: #ebd3cf;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #17636b);
+}
+.services-page main .contact-button-desktop {
+  display: none;
+}
+@media (min-width: 1080px) {
+  .services-page main .contact-button-desktop {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+}
+.services-page main .contact-button-desktop button {
+  background-color: #17636b;
+  opacity: 0.6;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.125rem #17636b);
+  width: 10rem;
 }/*# sourceMappingURL=style.css.map */
