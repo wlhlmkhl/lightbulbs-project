@@ -232,6 +232,7 @@ header h1 {
   height: auto;
   position: relative;
   display: block;
+  border-radius: 6%;
 }
 .employees_container .employees_box_one .col-2 {
   width: 100%;
