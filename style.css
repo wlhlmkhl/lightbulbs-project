@@ -77,9 +77,19 @@ footer .footer-bottom {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 1080px) {
+  footer .footer-bottom {
+    justify-content: center;
+  }
+}
 footer .footer-bottom address {
   font-size: 0.85rem;
   margin: 0.25rem;
+}
+@media (min-width: 1080px) {
+  footer .footer-bottom address {
+    font-size: 1rem;
+  }
 }
 footer .footer-bottom address p {
   margin: 0;
@@ -220,6 +230,13 @@ header a:hover {
   background-color: #029eac;
   color: #17636b;
 }
+@media (min-width: 1080px) {
+  header .icon:hover,
+  header a:hover {
+    background-color: transparent;
+    color: #ff716f;
+  }
+}
 
 .startpage {
   background-image: url(/assets/img/mobile-background.jpg);
@@ -302,8 +319,22 @@ header a:hover {
   align-items: center;
   margin-bottom: 1rem;
 }
+@media (min-width: 1080px) {
+  .services-page main section {
+    flex-direction: row;
+  }
+}
 .services-page main article {
   margin: 0 1rem 3rem 1rem;
+}
+@media (min-width: 1080px) {
+  .services-page main article {
+    width: 25%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .services-page main img {
   margin: 0 1rem;
@@ -313,12 +344,30 @@ header a:hover {
   margin: 3rem 0;
   font-size: 1.75rem;
 }
+@media (min-width: 1080px) {
+  .services-page main h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 .services-page main h3 {
   color: #ff716f;
   font-size: 1.25rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-evenly;
+}
+@media (min-width: 1080px) {
+  .services-page main h3 {
+    height: 4rem;
+  }
+}
+@media (min-width: 1080px) {
+  .services-page main article:nth-of-type(1) > h3,
+  .services-page main article:nth-of-type(3) > h3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .services-page main p {
   color: #17636b;

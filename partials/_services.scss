@@ -8,9 +8,19 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 1rem;
+      @include desktop {
+        flex-direction: row;
+      }
     }
     article {
       margin: 0 1rem 3rem 1rem;
+      @include desktop {
+        width: 25%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     }
     img {
       margin: 0 1rem;
@@ -19,6 +29,10 @@
       color: $blue-dark;
       margin: 3rem 0;
       font-size: 1.75rem;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+      }
     }
     h3 {
       color: $pink-dark;
@@ -26,6 +40,16 @@
       margin-bottom: 2rem;
       display: flex;
       justify-content: space-evenly;
+      @include desktop {
+        height: 4rem;
+      }
+    }
+    article:nth-of-type(1) > h3,
+    article:nth-of-type(3) > h3 {
+      @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+      }
     }
     p {
       color: $blue-dark;

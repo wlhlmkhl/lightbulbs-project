@@ -32,6 +32,9 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include desktop {
+      justify-content: center;
+    }
     // @include desktop {
     //   ul {
     //     display: flex;
@@ -42,6 +45,9 @@ footer {
     address {
       font-size: 0.85rem;
       margin: 0.25rem;
+      @include desktop {
+        font-size: 1rem;
+      }
       p {
         margin: 0;
         color: $blue-dark;
