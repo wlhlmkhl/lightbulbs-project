@@ -91,6 +91,10 @@ footer .footer-bottom address {
   font-size: 0.85rem;
   margin: 0.25rem;
 }
+footer .footer-bottom address a {
+  color: #029eac;
+  text-decoration: none;
+}
 @media (min-width: 1080px) {
   footer .footer-bottom address {
     font-size: 1rem;
@@ -467,7 +471,7 @@ header a:hover {
 @media (min-width: 1080px) {
   .cases-page main article {
     width: 25%;
-    height: 30rem;
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
