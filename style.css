@@ -208,110 +208,6 @@ body {
   font-size: 16px;
 }
 
-.startpage .main-container .catchphrase .catchphrase-row3 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.services-page {
-  background-image: linear-gradient(#b3d7db, #f3a8a3);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.containerText {
-  text-align: center;
-  margin: 1em auto;
-}
-
-.formContainer {
-  width: 100%;
-  height: 40%;
-  margin-top: -35%;
-  background-color: #b3d7db;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#emailForm {
-  border-radius: 20px;
-  width: 90%;
-  margin: 10px 0 0 0;
-}
-
-#subjectForm {
-  margin: 10px 0 0 0;
-  text-align: center;
-  border-radius: 20px;
-  width: 90;
-}
-
-#textForm {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
-}
-
-#submitButton {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
-}
-
-.dividerContainer {
-  display: flex;
-  justify-content: center;
-  padding: 2em 0 2em 0;
-  border: 1px pink solid;
-}
-
-.divider {
-  text-align: center;
-  width: 90%;
-  border-bottom: 5px solid black;
-}
-
-.imgContainer {
-  display: flex;
-  justify-content: center;
-}
-.employees_container .employees_box_one {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background: #b3d7db;
-}
-.employees_container .employees_box_one .right_box {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.infoBox {
-  width: 300px;
-  height: 200px;
-  border: 1px white solid;
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  box-sizing: border-box;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.employees_container .employees_box_one .name {
-  font-size: 16px;
-  font-style: italic;
-}
-.employees_container .employees_box_one .information {
-  font-size: 16px;
-}
-
 header #myLinks {
   display: none;
   position: fixed;
@@ -674,4 +570,96 @@ header a:hover {
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #17636b);
   width: 10rem;
+}
+
+.containerText {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.formContainer {
+  width: 100%;
+  margin: auto;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.contactForm {
+  width: 500px;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#emailForm {
+  border-radius: 20px;
+  width: 90%;
+  margin: 10px 0 0 0;
+}
+
+#subjectForm {
+  margin: 10px 0 0 0;
+  text-align: center;
+  border-radius: 20px;
+  width: 90;
+}
+
+#textForm {
+  margin: 10px 0 0 0;
+  border-radius: 20px;
+}
+
+#submitButton {
+  margin: 10px 0 0 0;
+  border-radius: 20px;
+}
+
+.dividerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 2em 0;
+  border: 1px pink solid;
+}
+
+.divider {
+  text-align: center;
+  width: 90%;
+  border-bottom: 5px solid black;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.officeJPG {
+  width: 85%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBox {
+  width: 300px;
+  height: 200px;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress, .telephone, .email {
+  padding: 0 2px;
 }/*# sourceMappingURL=style.css.map */
