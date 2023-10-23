@@ -595,33 +595,38 @@ header a:hover {
 }
 
 #emailForm {
-  border-radius: 20px;
-  width: 90%;
-  margin: 10px 0 0 0;
+  border-radius: 10px;
+  border: none;
 }
 
 #subjectForm {
   margin: 10px 0 0 0;
   text-align: center;
-  border-radius: 20px;
-  width: 90;
+  border-radius: 10px;
+  border: none;
 }
 
-#textForm {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
+#contactText {
+  border-radius: 10px;
+  border: none;
 }
 
 #submitButton {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
+  background-color: #17636b;
+  opacity: 0.6;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.125rem #17636b);
 }
 
 .dividerContainer {
   display: flex;
   justify-content: center;
   padding: 2em 0 2em 0;
-  border: 1px pink solid;
 }
 
 .divider {
@@ -658,6 +663,7 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .adress, .telephone, .email {
