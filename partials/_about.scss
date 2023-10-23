@@ -4,41 +4,15 @@ body {
     background-image: url(/assets/img/mobile-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    @include desktop {
+      background-image: linear-gradient($blue-light, $pink-light);
+    }
     
   
 
   }
 
-  header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    background-color: $blue-light;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    @include desktop {
-      justify-content: space-between;
-      .icon {
-        display: none;
-      }
-    }
-    .desktop-nav {
-      display: none;
-      @include desktop {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        color: $blue-dark;
-      }
-    }
-    h1 {
-      font-family: $font2;
-      color: $blue-dark;
-    }
-  }
+ 
   
 
 
@@ -63,8 +37,7 @@ body {
     color: $pink-dark;
     filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
     @include desktop {
-      font-size: 6rem;
-      margin-left: 10rem;
+      display: none;
     }
     p {
       margin: 0;
@@ -184,7 +157,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: 3rem;
+        margin: 3rem 0;
 
         @include desktop {
           width: 50%;
