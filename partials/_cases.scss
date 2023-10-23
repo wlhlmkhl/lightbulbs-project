@@ -1,4 +1,4 @@
-.services-page {
+.cases-page {
   background-image: linear-gradient($blue-light, $pink-light);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,6 +11,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
       margin-bottom: 1rem;
       @include desktop {
         flex-direction: row;
@@ -20,14 +21,11 @@
       margin: 0 1rem 3rem 1rem;
       @include desktop {
         width: 25%;
-        height: 20rem;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
       }
-    }
-    img {
-      margin: 0 1rem;
     }
     h2 {
       font-family: $font3;
@@ -38,24 +36,34 @@
       @include desktop {
         display: flex;
         justify-content: center;
+        padding-bottom: 4rem;
       }
     }
     h3 {
       font-family: $font3;
       color: $pink-dark;
       font-size: 1.25rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       display: flex;
       justify-content: space-evenly;
       @include desktop {
         height: 4rem;
       }
     }
-    article:nth-of-type(2) > h3,
-    article:nth-of-type(4) > h3 {
+    .review-stars {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .customer-portrait {
+      width: 4rem;
+      height: auto;
+      border-radius: 50%;
+      margin: 0.5rem;
+      float: left;
       @include desktop {
-        display: flex;
-        flex-direction: row-reverse;
+        width: 8rem;
       }
     }
     p {
@@ -65,7 +73,7 @@
     .contact-button {
       display: flex;
       justify-content: center;
-      margin-top: 3rem;
+      margin: 3rem 0;
       @include desktop {
         display: none;
       }

@@ -38,6 +38,10 @@ footer {
     address {
       font-size: 0.85rem;
       margin: 0.25rem;
+      a {
+        color: $blue-medium;
+        text-decoration: none;
+      }
       @include desktop {
         font-size: 1rem;
       }
