@@ -13,7 +13,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 2px solid #17636b;
+  border-bottom: 2px solid #125359;
 }
 @media (min-width: 1080px) {
   header {
@@ -34,7 +34,7 @@ header .desktop-nav {
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: #17636b;
+    color: #125359;
     font-size: 1.25rem;
   }
   header .desktop-nav:hover {
@@ -43,12 +43,12 @@ header .desktop-nav {
 }
 header h1 {
   font-family: "B612 Mono", monospace;
-  color: #17636b;
+  color: #125359;
 }
 
 footer {
   width: 100%;
-  background-color: #fc8e8b;
+  background-color: #f3a8a3;
   font-family: "Kumbh Sans", sans-serif;
   position: absolute;
   display: flex;
@@ -71,7 +71,7 @@ footer .footer-top {
   display: flex;
   align-items: center;
   font-family: "B612", sans-serif;
-  color: #17636b;
+  color: #125359;
 }
 footer .footer-top h3 {
   font-family: "B612 Mono", monospace;
@@ -92,8 +92,8 @@ footer .footer-bottom address {
   margin: 0.25rem;
 }
 footer .footer-bottom address a {
-  color: #029eac;
-  text-decoration: none;
+  color: #125359;
+  text-decoration: underline;
 }
 @media (min-width: 1080px) {
   footer .footer-bottom address {
@@ -102,20 +102,20 @@ footer .footer-bottom address a {
 }
 footer .footer-bottom address p {
   margin: 0;
-  color: #17636b;
+  color: #125359;
 }
 footer .footer-bottom ul {
   list-style: none;
 }
 footer .footer-bottom ul a {
-  color: #17636b;
+  color: #125359;
   text-decoration: none;
 }
 footer .footer-bottom ul li {
   text-align: center;
 }
 footer p {
-  color: #17636b;
+  color: #125359;
 }
 footer > p {
   font-size: 0.75rem;
@@ -127,40 +127,10 @@ footer > p {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  background-color: #b3d7db;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
 @media (min-width: 1080px) {
-  header {
-    justify-content: space-between;
+  body {
+    background-image: linear-gradient(#b3d7db, #f3a8a3);
   }
-  header .icon {
-    display: none;
-  }
-}
-header .desktop-nav {
-  display: none;
-}
-@media (min-width: 1080px) {
-  header .desktop-nav {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    color: #17636b;
-  }
-}
-header h1 {
-  font-family: "B612 Mono", monospace;
-  color: #17636b;
 }
 
 .main {
@@ -182,8 +152,7 @@ header h1 {
 }
 @media (min-width: 1080px) {
   .catchphrase {
-    font-size: 6rem;
-    margin-left: 10rem;
+    display: none;
   }
 }
 .catchphrase p {
@@ -283,7 +252,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 @media (min-width: 1080px) {
   .employees_container .employees_box_one .col-2 {
@@ -330,8 +299,8 @@ header #myLinks {
   z-index: 10;
   text-align: center;
   font-size: 1.25rem;
-  border-bottom: 2px solid #17636b;
-  border-left: 2px solid #17636b;
+  border-bottom: 2px solid #125359;
+  border-left: 2px solid #125359;
 }
 
 header .icon:not(a) {
@@ -340,7 +309,7 @@ header .icon:not(a) {
 }
 
 header a {
-  color: #17636b;
+  color: #125359;
   text-decoration: none;
   display: block;
   padding: 0.5rem;
@@ -358,7 +327,7 @@ header a.icon {
 header .icon:hover,
 header a:hover {
   background-color: #029eac;
-  color: #17636b;
+  color: #125359;
 }
 @media (min-width: 1080px) {
   header .icon:hover,
@@ -398,7 +367,7 @@ header a:hover {
   justify-content: center;
 }
 .startpage .main-container .cta a button {
-  background-color: #17636b;
+  background-color: #125359;
   opacity: 0.8;
   border: none;
   border-radius: 1rem;
@@ -406,7 +375,7 @@ header a:hover {
   padding: 1rem;
   color: #fff;
   font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
+  filter: drop-shadow(0 0 0.125rem #125359);
 }
 .startpage .main-container .catchphrase {
   width: 8rem;
@@ -449,12 +418,6 @@ header a:hover {
     margin: 0 auto;
   }
 }
-.services-page main section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-}
 @media (min-width: 1080px) {
   .services-page main section {
     flex-direction: row;
@@ -487,79 +450,6 @@ header a:hover {
     display: flex;
     justify-content: center;
   }
-}
-.services-page main h3 {
-  font-family: "Kumbh Sans", sans-serif;
-  color: #ff716f;
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media (min-width: 1080px) {
-  .services-page main h3 {
-    height: 4rem;
-  }
-}
-@media (min-width: 1080px) {
-  .services-page main article:nth-of-type(2) > h3,
-  .services-page main article:nth-of-type(4) > h3 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-.services-page main p {
-  color: #17636b;
-  text-align: left;
-}
-.services-page main .contact-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-@media (min-width: 1080px) {
-  .services-page main .contact-button {
-    display: none;
-  }
-}
-.services-page main .contact-button button {
-  background-color: #17636b;
-  opacity: 0.6;
-  border: none;
-  border-radius: 1rem;
-  height: 4rem;
-  padding: 1rem;
-  color: #ebd3cf;
-  font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
-}
-.services-page main .contact-button-desktop {
-  display: none;
-}
-@media (min-width: 1080px) {
-  .services-page main .contact-button-desktop {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-}
-.services-page main .contact-button-desktop button {
-  background-color: #17636b;
-  opacity: 0.6;
-  border: none;
-  border-radius: 1rem;
-  height: 4rem;
-  padding: 1rem;
-  color: #ebd3cf;
-  font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
-  width: 10rem;
-}
-
-.services-page {
-  background-image: linear-gradient(#b3d7db, #f3a8a3);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 @media (min-width: 1080px) {
   .services-page main {
@@ -595,7 +485,7 @@ header a:hover {
 }
 .services-page main h2 {
   font-family: "Kumbh Sans", sans-serif;
-  color: #17636b;
+  color: #125359;
   margin: 3rem 0;
   font-size: 1.75rem;
   text-align: center;
@@ -627,7 +517,7 @@ header a:hover {
   }
 }
 .services-page main p {
-  color: #17636b;
+  color: #125359;
   text-align: left;
 }
 .services-page main .contact-button {
@@ -641,7 +531,7 @@ header a:hover {
   }
 }
 .services-page main .contact-button button {
-  background-color: #17636b;
+  background-color: #125359;
   opacity: 0.6;
   border: none;
   border-radius: 1rem;
@@ -649,7 +539,7 @@ header a:hover {
   padding: 1rem;
   color: #ebd3cf;
   font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
+  filter: drop-shadow(0 0 0.125rem #125359);
 }
 .services-page main .contact-button-desktop {
   display: none;
@@ -662,7 +552,7 @@ header a:hover {
   }
 }
 .services-page main .contact-button-desktop button {
-  background-color: #17636b;
+  background-color: #125359;
   opacity: 0.6;
   border: none;
   border-radius: 1rem;
@@ -670,7 +560,7 @@ header a:hover {
   padding: 1rem;
   color: #ebd3cf;
   font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
+  filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
 }
 
@@ -711,7 +601,7 @@ header a:hover {
 }
 .cases-page main h2 {
   font-family: "Kumbh Sans", sans-serif;
-  color: #17636b;
+  color: #125359;
   margin: 3rem 0;
   font-size: 1.75rem;
   text-align: center;
@@ -755,7 +645,7 @@ header a:hover {
   }
 }
 .cases-page main p {
-  color: #17636b;
+  color: #125359;
   text-align: left;
 }
 .cases-page main .contact-button {
@@ -769,7 +659,7 @@ header a:hover {
   }
 }
 .cases-page main .contact-button button {
-  background-color: #17636b;
+  background-color: #125359;
   opacity: 0.6;
   border: none;
   border-radius: 1rem;
@@ -777,7 +667,7 @@ header a:hover {
   padding: 1rem;
   color: #ebd3cf;
   font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
+  filter: drop-shadow(0 0 0.125rem #125359);
 }
 .cases-page main .contact-button-desktop {
   display: none;
@@ -790,7 +680,7 @@ header a:hover {
   }
 }
 .cases-page main .contact-button-desktop button {
-  background-color: #17636b;
+  background-color: #125359;
   opacity: 0.6;
   border: none;
   border-radius: 1rem;
@@ -798,10 +688,36 @@ header a:hover {
   padding: 1rem;
   color: #ebd3cf;
   font-size: 1.25rem;
-  filter: drop-shadow(0 0 0.125rem #17636b);
+  filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
 }
 
+.contact-page {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1080px) {
+  .contact-page-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contact-page-wrapper .left-container {
+  border-right: 5px solid black;
+}
+@media (max-width: 1080px) {
+  .contact-page-wrapper .left-container {
+    border: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    background-image: linear-gradient(#b3d7db, #f3a8a3);
+  }
+}
 .containerText {
   text-align: center;
   margin: 1em auto;
@@ -815,7 +731,7 @@ header a:hover {
 }
 
 .contactForm {
-  width: 500px;
+  width: 100%;
   height: 50vh;
   margin: 0 auto;
   display: flex;
@@ -825,39 +741,49 @@ header a:hover {
 }
 
 #emailForm {
-  border-radius: 20px;
-  width: 90%;
-  margin: 10px 0 0 0;
+  border-radius: 10px;
+  border: none;
 }
 
 #subjectForm {
   margin: 10px 0 0 0;
   text-align: center;
-  border-radius: 20px;
-  width: 90;
+  border-radius: 10px;
+  border: none;
 }
 
-#textForm {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
+#contactText {
+  border-radius: 10px;
+  border: none;
 }
 
 #submitButton {
-  margin: 10px 0 0 0;
-  border-radius: 20px;
+  background-color: #125359;
+  opacity: 0.6;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.125rem #125359);
 }
 
 .dividerContainer {
   display: flex;
   justify-content: center;
   padding: 2em 0 2em 0;
-  border: 1px pink solid;
 }
 
 .divider {
   text-align: center;
   width: 90%;
   border-bottom: 5px solid black;
+}
+@media (min-width: 1080px) {
+  .divider {
+    border: none;
+  }
 }
 
 .imgContainer {
@@ -888,6 +814,7 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .adress, .telephone, .email {
