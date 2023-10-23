@@ -121,7 +121,7 @@ footer > p {
   font-size: 0.75rem;
 }
 
-body {
+.body_about {
   min-width: auto;
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
@@ -443,6 +443,12 @@ header a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1080px) {
+  .services-page main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 .services-page main section {
   display: flex;
   flex-direction: column;
@@ -460,7 +466,7 @@ header a:hover {
 @media (min-width: 1080px) {
   .services-page main article {
     width: 25%;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -554,6 +560,12 @@ header a:hover {
   background-image: linear-gradient(#b3d7db, #f3a8a3);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 1080px) {
+  .services-page main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 .services-page main section {
   display: flex;
