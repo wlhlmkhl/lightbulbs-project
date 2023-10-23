@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background-color: $pink-medium;
+  background-color: $pink-light;
   font-family: $font3;
   position: absolute;
   display: flex;
@@ -39,8 +39,8 @@ footer {
       font-size: 0.85rem;
       margin: 0.25rem;
       a {
-        color: $blue-medium;
-        text-decoration: none;
+        color: $blue-dark;
+        text-decoration: underline;
       }
       @include desktop {
         font-size: 1rem;
