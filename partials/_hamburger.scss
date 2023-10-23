@@ -1,10 +1,15 @@
 header #myLinks {
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 5.125rem;
+  right: 0;
   background-color: $blue-light;
-  width: 100%;
+  width: 30%;
   z-index: 10;
+  text-align: center;
+  font-size: 1.25rem;
+  border-bottom: 2px solid $blue-dark;
+  border-left: 2px solid $blue-dark;
 }
 header .icon:not(a) {
   color: white;
@@ -18,6 +23,7 @@ header a {
 }
 header a.icon {
   background-color: transparent;
+  height: 100%;
   display: block;
   position: absolute;
   right: 0;
@@ -27,5 +33,9 @@ header .icon:hover,
 header a:hover {
   background-color: $blue-medium;
   color: $blue-dark;
+  @include desktop {
+    background-color: transparent;
+    color: $pink-dark;
+  }
 }
 // Måste fixa nesting här
