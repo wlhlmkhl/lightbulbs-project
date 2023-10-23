@@ -13,6 +13,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 2px solid #17636b;
 }
 @media (min-width: 1080px) {
   header {
@@ -35,6 +36,9 @@ header .desktop-nav {
     gap: 2rem;
     color: #17636b;
     font-size: 1.25rem;
+  }
+  header .desktop-nav:hover {
+    cursor: pointer;
   }
 }
 header h1 {
@@ -86,6 +90,10 @@ footer .footer-bottom {
 footer .footer-bottom address {
   font-size: 0.85rem;
   margin: 0.25rem;
+}
+footer .footer-bottom address a {
+  color: #029eac;
+  text-decoration: none;
 }
 @media (min-width: 1080px) {
   footer .footer-bottom address {
@@ -203,10 +211,15 @@ body {
 header #myLinks {
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 5.125rem;
+  right: 0;
   background-color: #b3d7db;
-  width: 100%;
+  width: 30%;
   z-index: 10;
+  text-align: center;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #17636b;
+  border-left: 2px solid #17636b;
 }
 
 header .icon:not(a) {
@@ -223,6 +236,7 @@ header a {
 
 header a.icon {
   background-color: transparent;
+  height: 100%;
   display: block;
   position: absolute;
   right: 0;
@@ -273,12 +287,12 @@ header a:hover {
 }
 .startpage .main-container .cta a button {
   background-color: #17636b;
-  opacity: 0.6;
+  opacity: 0.8;
   border: none;
   border-radius: 1rem;
   height: 4rem;
   padding: 1rem;
-  color: #ebd3cf;
+  color: #fff;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #17636b);
 }
@@ -317,6 +331,12 @@ header a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1080px) {
+  .services-page main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 .services-page main section {
   display: flex;
   flex-direction: column;
@@ -334,7 +354,7 @@ header a:hover {
 @media (min-width: 1080px) {
   .services-page main article {
     width: 25%;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -412,6 +432,134 @@ header a:hover {
   }
 }
 .services-page main .contact-button-desktop button {
+  background-color: #17636b;
+  opacity: 0.6;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.125rem #17636b);
+  width: 10rem;
+}
+
+.cases-page {
+  background-image: linear-gradient(#b3d7db, #f3a8a3);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1080px) {
+  .cases-page main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.cases-page main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1080px) {
+  .cases-page main section {
+    flex-direction: row;
+  }
+}
+.cases-page main article {
+  margin: 0 1rem 3rem 1rem;
+}
+@media (min-width: 1080px) {
+  .cases-page main article {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
+.cases-page main h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #17636b;
+  margin: 3rem 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .cases-page main h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+}
+.cases-page main h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #ff716f;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (min-width: 1080px) {
+  .cases-page main h3 {
+    height: 4rem;
+  }
+}
+.cases-page main .review-stars {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.cases-page main .customer-portrait {
+  width: 4rem;
+  height: auto;
+  border-radius: 50%;
+  margin: 0.5rem;
+  float: left;
+}
+@media (min-width: 1080px) {
+  .cases-page main .customer-portrait {
+    width: 8rem;
+  }
+}
+.cases-page main p {
+  color: #17636b;
+  text-align: left;
+}
+.cases-page main .contact-button {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+@media (min-width: 1080px) {
+  .cases-page main .contact-button {
+    display: none;
+  }
+}
+.cases-page main .contact-button button {
+  background-color: #17636b;
+  opacity: 0.6;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  color: #ebd3cf;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.125rem #17636b);
+}
+.cases-page main .contact-button-desktop {
+  display: none;
+}
+@media (min-width: 1080px) {
+  .cases-page main .contact-button-desktop {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+}
+.cases-page main .contact-button-desktop button {
   background-color: #17636b;
   opacity: 0.6;
   border: none;
