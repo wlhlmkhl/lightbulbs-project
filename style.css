@@ -211,13 +211,15 @@ body {
 header #myLinks {
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 5.125rem;
+  right: 0;
   background-color: #b3d7db;
-  width: 100%;
+  width: 30%;
   z-index: 10;
-  text-align: right;
+  text-align: center;
   font-size: 1.25rem;
   border-bottom: 2px solid #17636b;
+  border-left: 2px solid #17636b;
 }
 
 header .icon:not(a) {
@@ -352,7 +354,7 @@ header a:hover {
 @media (min-width: 1080px) {
   .services-page main article {
     width: 25%;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
