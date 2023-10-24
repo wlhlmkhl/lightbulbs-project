@@ -1,109 +1,90 @@
 
-body {
-    min-width: auto;
-    background-image: url(/assets/img/mobile-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include desktop {
-      background-image: linear-gradient($blue-light, $pink-light);
-    }
-    
-  
-
+.body_about_us {
+  background-image: url(/assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include desktop {
+    background-image: url(/assets/img/desktop-background.jpg);
   }
 
- 
-  
-
-
-
-.main {
-    min-width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-    
-}
-
-.catchphrase {
+  .catchphrase {
     width: 8rem;
     font-family: $font1;
     font-size: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
     margin-left: 3rem;
+    margin-bottom: 2rem;
     color: $pink-dark;
     filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
-    @include desktop {
-      display: none;
-    }
+    
     p {
       margin: 0;
     }
     .catchphrase-row2 {
       span {
         font-size: 1.25rem;
-        @include desktop {
-          font-size: 3.25rem;
-        }
       }
     }
     .catchphrase-row3 {
       display: flex;
       justify-content: flex-end;
     }
+
+    @include desktop {
+      display: none;
+    }
   }
 
-.About_us_textbox {
-    width: 100%;
-    height: 40%;
-    background-color: $blue-light;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-  
-    
-    
-    
 
-    h3 {
+
+
+    .About_us_textbox {
+      width: 100%;
+      height: 40%;
+      background-color: $blue-light;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+      @include desktop {
+        margin-top: 1rem;
+      }
+      
+
+      h3 {
         text-align: center;
         font-family: $font1;
-    }
+      }
 
-    p {
+      p {
         text-align: center;
         margin: 10px;
-    }
-}
-
-.employees_container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-  
-
-    h4 {
-       width: 100%; 
-       height: 40px;
-       font-family: $font1;
-       background: $pink-dark;
-       color: black; 
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       margin-top: 1rem;
-       margin-bottom: 1rem;
-       padding: 1rem;
+      }
     }
 
-    .employees_box_one {
+    .employees_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+      h4 {
+        width: 100%; 
+        height: 40px;
+        font-family: $font1;
+        background: $pink-dark;
+        color: black; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+      }
+
+      .employees_box {
         width: 100%;
         height: auto;
         display: flex;
@@ -113,27 +94,24 @@ body {
 
         @include desktop {
           flex-direction: row;
-          
-
         }
 
-     .col-1 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      
+        .col-1 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        
 
-        @include desktop {
-          width: 50%;
-          
-        }
-      
-    }
+          @include desktop {
+            width: 50%;
+            
+          }
+        
 
-        img {
+          img {
             width: 10rem;
             height: auto;
             position: relative;
@@ -142,80 +120,70 @@ body {
             
             @include desktop {
               width: 15rem;
-            
-              
             }
 
+          }
         }
+   
 
-     
+  
 
-    
-
-    .col-2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 3rem 0;
-
-        @include desktop {
-          width: 50%;
+        .col-2 {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-bottom: 1rem;
+          padding-left: 1rem;
           
+          
+          
+
+          @include desktop {
+            width: 50%;
+            
+          }
+
+          .name {
+            font-size: 16px;
+            font-style: italic;
+          }
+      
+          .information {
+            font-size: 16px;
+            margin-right: 5rem;  
+          }
+  
+          .contactMe {
+            display: flex;
+            width: 10rem;
+
+            :hover{
+              font-size: 15px;
+              color: $pink-dark;
+            }
+
+            .social-icon {
+              width: 2rem;
+            }
+
+
+            a {
+              display: flex;
+              gap: 1rem;
+              text-decoration: none;
+            }
+
+            p {
+              color: black;
+              font-size: 13px;
+              font-family: $font2;
+    
+            }
+
+
+          }
         }
-        
+      }
     }
-
-    .name {
-        font-size: 16px;
-        font-style: italic;
-    }
-        
-    .information {
-        font-size: 16px;
-        margin-right: 5rem;
-        
-    }
-    
-  }
-
-  
-  .contactMe {
-    display: flex;
-    width: 10rem;
-
-    :hover{
-        font-size: 15px;
-        color: $pink-dark;
-        
-        
-    }
-  
-
- .social-icon {
-    width: 2rem;
-    
-
-  }
-
-  
-    a {
-      display: flex;
-      gap: 1rem;
-      text-decoration: none;
-      
-    }
-
-    p {
-      color: black;
-      font-size: 13px;
-      font-family: $font2;
-      
-    }
-  
-  }
-
-
-
-  
 }

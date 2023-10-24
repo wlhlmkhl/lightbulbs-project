@@ -137,57 +137,42 @@ footer > p {
   font-size: 0.75rem;
 }
 
-body {
-  min-width: auto;
+.body_about_us {
   background-image: url(/assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 1080px) {
-  body {
-    background-image: linear-gradient(#b3d7db, #f3a8a3);
+  .body_about_us {
+    background-image: url(/assets/img/desktop-background.jpg);
   }
 }
-
-.main {
-  min-width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.catchphrase {
+.body_about_us .catchphrase {
   width: 8rem;
   font-family: "B612", sans-serif;
   font-size: 2rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
   margin-left: 3rem;
+  margin-bottom: 2rem;
   color: #ff716f;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
 }
-@media (min-width: 1080px) {
-  .catchphrase {
-    display: none;
-  }
-}
-.catchphrase p {
+.body_about_us .catchphrase p {
   margin: 0;
 }
-.catchphrase .catchphrase-row2 span {
+.body_about_us .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
 }
-@media (min-width: 1080px) {
-  .catchphrase .catchphrase-row2 span {
-    font-size: 3.25rem;
-  }
-}
-.catchphrase .catchphrase-row3 {
+.body_about_us .catchphrase .catchphrase-row3 {
   display: flex;
   justify-content: flex-end;
 }
-
-.About_us_textbox {
+@media (min-width: 1080px) {
+  .body_about_us .catchphrase {
+    display: none;
+  }
+}
+.body_about_us .About_us_textbox {
   width: 100%;
   height: 40%;
   background-color: #b3d7db;
@@ -196,22 +181,26 @@ body {
   justify-content: center;
   padding: 1rem;
 }
-.About_us_textbox h3 {
+@media (min-width: 1080px) {
+  .body_about_us .About_us_textbox {
+    margin-top: 1rem;
+  }
+}
+.body_about_us .About_us_textbox h3 {
   text-align: center;
   font-family: "B612", sans-serif;
 }
-.About_us_textbox p {
+.body_about_us .About_us_textbox p {
   text-align: center;
   margin: 10px;
 }
-
-.employees_container {
+.body_about_us .employees_container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.employees_container h4 {
+.body_about_us .employees_container h4 {
   width: 100%;
   height: 40px;
   font-family: "B612", sans-serif;
@@ -225,7 +214,7 @@ body {
   margin-bottom: 1rem;
   padding: 1rem;
 }
-.employees_container .employees_box_one {
+.body_about_us .employees_container .employees_box {
   width: 100%;
   height: auto;
   display: flex;
@@ -234,11 +223,11 @@ body {
   background: #b3d7db;
 }
 @media (min-width: 1080px) {
-  .employees_container .employees_box_one {
+  .body_about_us .employees_container .employees_box {
     flex-direction: row;
   }
 }
-.employees_container .employees_box_one .col-1 {
+.body_about_us .employees_container .employees_box .col-1 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -247,11 +236,11 @@ body {
   margin-bottom: 2rem;
 }
 @media (min-width: 1080px) {
-  .employees_container .employees_box_one .col-1 {
+  .body_about_us .employees_container .employees_box .col-1 {
     width: 50%;
   }
 }
-.employees_container .employees_box_one img {
+.body_about_us .employees_container .employees_box .col-1 img {
   width: 10rem;
   height: auto;
   position: relative;
@@ -259,47 +248,48 @@ body {
   border-radius: 6%;
 }
 @media (min-width: 1080px) {
-  .employees_container .employees_box_one img {
+  .body_about_us .employees_container .employees_box .col-1 img {
     width: 15rem;
   }
 }
-.employees_container .employees_box_one .col-2 {
+.body_about_us .employees_container .employees_box .col-2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 3rem 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 @media (min-width: 1080px) {
-  .employees_container .employees_box_one .col-2 {
+  .body_about_us .employees_container .employees_box .col-2 {
     width: 50%;
   }
 }
-.employees_container .employees_box_one .name {
+.body_about_us .employees_container .employees_box .col-2 .name {
   font-size: 16px;
   font-style: italic;
 }
-.employees_container .employees_box_one .information {
+.body_about_us .employees_container .employees_box .col-2 .information {
   font-size: 16px;
   margin-right: 5rem;
 }
-.employees_container .contactMe {
+.body_about_us .employees_container .employees_box .col-2 .contactMe {
   display: flex;
   width: 10rem;
 }
-.employees_container .contactMe :hover {
+.body_about_us .employees_container .employees_box .col-2 .contactMe :hover {
   font-size: 15px;
   color: #ff716f;
 }
-.employees_container .contactMe .social-icon {
+.body_about_us .employees_container .employees_box .col-2 .contactMe .social-icon {
   width: 2rem;
 }
-.employees_container .contactMe a {
+.body_about_us .employees_container .employees_box .col-2 .contactMe a {
   display: flex;
   gap: 1rem;
   text-decoration: none;
 }
-.employees_container .contactMe p {
+.body_about_us .employees_container .employees_box .col-2 .contactMe p {
   color: black;
   font-size: 13px;
   font-family: "B612 Mono", monospace;
