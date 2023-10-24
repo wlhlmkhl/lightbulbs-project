@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   background-color: $blue-light;
@@ -16,26 +16,36 @@ header {
       display: none;
     }
   }
-  .desktop-nav {
-    display: none;
-    @include desktop {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      color: $blue-dark;
-      font-size: 1.25rem;
-      &:hover {
-        cursor: pointer;
-      }
-      .active-page {
-        color: $pink-dark;
-        text-decoration: underline;
-      }
-    }
-  }
   h1 {
     font-family: $font2;
     color: $blue-dark;
+  }
+  nav {
+    a.icon {
+      padding-right: 1rem;
+    }
+    .desktop-nav {
+      display: none;
+      @include desktop {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.25rem;
+        li {
+          a {
+            text-decoration: none;
+            color: $blue-dark;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        .active-page {
+          color: $pink-dark;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
