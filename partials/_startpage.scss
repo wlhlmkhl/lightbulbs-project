@@ -20,7 +20,7 @@
     .cta {
       display: flex;
       justify-content: center;
-      a button {
+      a {
         background-color: $blue-dark;
         opacity: 0.8;
         border: none;
@@ -29,6 +29,7 @@
         padding: 1rem;
         color: #fff;
         font-size: 1.25rem;
+        text-decoration: none;
         filter: drop-shadow(0 0 0.125rem $blue-dark);
       }
     }
@@ -43,7 +44,7 @@
       @include desktop {
         font-size: 6rem;
       }
-      p {
+      span {
         margin: 0;
       }
       .catchphrase-row2 {

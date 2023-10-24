@@ -379,7 +379,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   display: flex;
   justify-content: center;
 }
-.startpage .main-container .cta a button {
+.startpage .main-container .cta a {
   background-color: #125359;
   opacity: 0.8;
   border: none;
@@ -388,6 +388,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   padding: 1rem;
   color: #fff;
   font-size: 1.25rem;
+  text-decoration: none;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
 .startpage .main-container .catchphrase {
@@ -404,7 +405,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
     font-size: 6rem;
   }
 }
-.startpage .main-container .catchphrase p {
+.startpage .main-container .catchphrase span {
   margin: 0;
 }
 .startpage .main-container .catchphrase .catchphrase-row2 span {
@@ -506,12 +507,12 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 .services-page main .contact-button button {
   background-color: #125359;
-  opacity: 0.6;
+  opacity: 0.8;
   border: none;
   border-radius: 1rem;
   height: 4rem;
   padding: 1rem;
-  color: #ebd3cf;
+  color: #fff;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
@@ -527,12 +528,12 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 .services-page main .contact-button-desktop button {
   background-color: #125359;
-  opacity: 0.6;
+  opacity: 0.8;
   border: none;
   border-radius: 1rem;
   height: 4rem;
   padding: 1rem;
-  color: #ebd3cf;
+  color: #fff;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
@@ -629,12 +630,12 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 .cases-page main .contact-button button {
   background-color: #125359;
-  opacity: 0.6;
+  opacity: 0.8;
   border: none;
   border-radius: 1rem;
   height: 4rem;
   padding: 1rem;
-  color: #ebd3cf;
+  color: #fff;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
@@ -650,12 +651,12 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 .cases-page main .contact-button-desktop button {
   background-color: #125359;
-  opacity: 0.6;
+  opacity: 0.8;
   border: none;
   border-radius: 1rem;
   height: 4rem;
   padding: 1rem;
-  color: #ebd3cf;
+  color: #fff;
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
