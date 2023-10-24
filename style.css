@@ -40,6 +40,10 @@ header .desktop-nav {
   header .desktop-nav:hover {
     cursor: pointer;
   }
+  header .desktop-nav .active-page {
+    color: #ff716f;
+    text-decoration: underline;
+  }
 }
 header h1 {
   font-family: "B612 Mono", monospace;
@@ -95,6 +99,9 @@ footer .footer-bottom address a {
   color: #125359;
   text-decoration: underline;
 }
+footer .footer-bottom address a:hover {
+  color: #029eac;
+}
 @media (min-width: 1080px) {
   footer .footer-bottom address {
     font-size: 1rem;
@@ -110,6 +117,9 @@ footer .footer-bottom ul {
 footer .footer-bottom ul a {
   color: #125359;
   text-decoration: none;
+}
+footer .footer-bottom ul a:hover {
+  color: #029eac;
 }
 footer .footer-bottom ul li {
   text-align: center;

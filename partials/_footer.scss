@@ -41,6 +41,9 @@ footer {
       a {
         color: $blue-dark;
         text-decoration: underline;
+        &:hover {
+          color: $blue-medium;
+        }
       }
       @include desktop {
         font-size: 1rem;
@@ -55,6 +58,9 @@ footer {
       a {
         color: $blue-dark;
         text-decoration: none;
+        &:hover {
+          color: $blue-medium;
+        }
       }
       li {
         text-align: center;
