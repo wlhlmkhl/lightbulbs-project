@@ -28,6 +28,10 @@ header {
       &:hover {
         cursor: pointer;
       }
+      .active-page {
+        color: $pink-dark;
+        text-decoration: underline;
+      }
     }
   }
   h1 {
