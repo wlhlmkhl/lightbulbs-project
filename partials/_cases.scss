@@ -23,7 +23,7 @@
         width: 25%;
         height: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: flex-start;
       }
     }
@@ -46,9 +46,6 @@
       margin-bottom: 1rem;
       display: flex;
       justify-content: space-evenly;
-      @include desktop {
-        height: 4rem;
-      }
     }
     .review-stars {
       margin-bottom: 1rem;

@@ -1,41 +1,83 @@
-header #myLinks {
-  display: none;
-  position: fixed;
-  top: 5.125rem;
-  right: 0;
-  background-color: $blue-light;
-  width: 30%;
-  z-index: 10;
-  text-align: center;
-  font-size: 1.25rem;
-  border-bottom: 2px solid $blue-dark;
-  border-left: 2px solid $blue-dark;
-}
-header .icon:not(a) {
-  color: white;
-  padding: 1rem;
-}
-header a {
-  color: $blue-dark;
-  text-decoration: none;
-  display: block;
-  padding: 0.5rem;
-}
-header a.icon {
-  background-color: transparent;
-  height: 100%;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-header .icon:hover,
-header a:hover {
-  background-color: $blue-medium;
-  color: $blue-dark;
-  @include desktop {
-    background-color: transparent;
-    color: $pink-dark;
+// header #myLinks {
+//   display: none;
+//   position: fixed;
+//   top: 5.125rem;
+//   right: 0;
+//   background-color: $blue-light;
+//   width: 30%;
+//   z-index: 10;
+//   text-align: center;
+//   font-size: 1.25rem;
+//   border-bottom: 2px solid $blue-dark;
+//   border-left: 2px solid $blue-dark;
+// }
+// header .icon:not(a) {
+//   color: white;
+//   padding: 1rem;
+// }
+// header a {
+//   color: $blue-dark;
+//   text-decoration: none;
+//   display: block;
+//   padding: 0.5rem;
+// }
+// header a.icon {
+//   background-color: transparent;
+//   height: 100%;
+//   display: block;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+// header .icon:hover,
+// header a:hover {
+//   background-color: $blue-medium;
+//   color: $blue-dark;
+//   @include desktop {
+//     background-color: transparent;
+//     color: $pink-dark;
+//   }
+// }
+// Måste fixa nesting här
+header {
+  #myLinks {
+    display: none;
+    position: fixed;
+    top: 5.125rem;
+    right: 0;
+    background-color: $blue-light;
+    width: 30%;
+    z-index: 10;
+    text-align: center;
+    font-size: 1.25rem;
+    border-bottom: 2px solid $blue-dark;
+    border-left: 2px solid $blue-dark;
+    .icon:not(a) {
+      color: white;
+      padding: 1rem;
+    }
+    a {
+      color: $blue-dark;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem;
+      .icon {
+        background-color: transparent;
+        height: 100%;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      icon:hover,
+      &:hover {
+        background-color: $blue-medium;
+        color: $blue-dark;
+        @include desktop {
+          background-color: transparent;
+          color: $pink-dark;
+        }
+      }
+    }
   }
 }
-// Måste fixa nesting här
