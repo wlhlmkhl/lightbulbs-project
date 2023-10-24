@@ -599,8 +599,8 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   gap: 2rem;
 }
 .cases-page main .customer-portrait {
-  width: 4rem;
-  height: auto;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   margin: 0.5rem;
   float: left;
