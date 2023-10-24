@@ -733,7 +733,7 @@ header a:hover {
 }
 
 #submitButton {
-  background-color: #007bff;
+  background-color: #125359;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -742,7 +742,7 @@ header a:hover {
   font-weight: bold;
 }
 #submitButton:hover {
-  background-color: #0062cc;
+  background-color: #092b2f;
 }
 
 .dividerContainer {
