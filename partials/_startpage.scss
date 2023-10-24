@@ -5,6 +5,13 @@
   @include desktop {
     background-image: url(/assets/img/desktop-background.jpg);
   }
+  .about-text {
+    color: $pink-dark;
+    font-family: $font1;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
   .main-container {
     height: 100vh;
     display: flex;

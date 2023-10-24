@@ -360,6 +360,13 @@ header #myLinks a icon:hover, header #myLinks a:hover {
     background-image: url(/assets/img/desktop-background.jpg);
   }
 }
+.startpage .about-text {
+  color: #ff716f;
+  font-family: "B612", sans-serif;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
 .startpage .main-container {
   height: 100vh;
   display: flex;
