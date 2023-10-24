@@ -47,6 +47,9 @@ header nav .desktop-nav {
     text-decoration: none;
     color: #125359;
   }
+  header nav .desktop-nav li a:hover {
+    color: #ff716f;
+  }
   header nav .desktop-nav:hover {
     cursor: pointer;
   }
