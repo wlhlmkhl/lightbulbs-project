@@ -5,6 +5,13 @@
   @include desktop {
     background-image: url(/assets/img/desktop-background.jpg);
   }
+  .about-text {
+    color: $pink-dark;
+    font-family: $font1;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
   .main-container {
     height: 100vh;
     display: flex;
@@ -20,7 +27,7 @@
     .cta {
       display: flex;
       justify-content: center;
-      a button {
+      a {
         background-color: $blue-dark;
         opacity: 0.8;
         border: none;
@@ -29,6 +36,7 @@
         padding: 1rem;
         color: #fff;
         font-size: 1.25rem;
+        text-decoration: none;
         filter: drop-shadow(0 0 0.125rem $blue-dark);
       }
     }
@@ -43,7 +51,7 @@
       @include desktop {
         font-size: 6rem;
       }
-      p {
+      span {
         margin: 0;
       }
       .catchphrase-row2 {
