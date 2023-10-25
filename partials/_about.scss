@@ -7,6 +7,11 @@
     background-image: url(/assets/img/desktop-background.jpg);
   }
 
+  header {
+    a {
+      text-decoration: none;
+    }
+  }
 
   .container_catchphrase {
     display: flex;
@@ -55,12 +60,13 @@
 
       h3 {
         text-align: center;
-        font-family: $font1;
+        font-family: $font3;
       }
 
       p {
         text-align: center;
         margin: 10px;
+        font-family: $font3;
       }
     }
 
@@ -73,8 +79,8 @@
       h4 {
         width: 100%; 
         height: 40px;
-        font-family: $font1;
-        background: $pink-dark;
+        font-family: $font3;
+        background: $pink-light;
         color: black; 
         display: flex;
         flex-direction: column;
@@ -133,11 +139,15 @@
           width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          align-content: center;
           margin-bottom: 1rem;
           padding-left: 1rem;
+          justify-content: center;
           
           
+          h5 {
+            font-family: $font3;
+          }
           
 
           @include desktop {
@@ -147,10 +157,11 @@
 
           .name {
             font-size: 16px;
-            font-style: italic;
+            font-style: $font3;
           }
       
           .information {
+            font-family: $font3;
             font-size: 16px;
             margin-right: 5rem;  
           }
