@@ -704,7 +704,6 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 .contact-page-wrapper .left-container {
   border-right: 5px solid black;
-  padding-right: 5rem;
 }
 @media (max-width: 1080px) {
   .contact-page-wrapper .left-container {
@@ -716,10 +715,15 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   body {
     background-image: linear-gradient(#b3d7db, #f3a8a3);
   }
+  body .left-container {
+    width: 49%;
+  }
 }
 .containerText {
   text-align: center;
   margin: 1em auto;
+  font-family: "B612 Mono", monospace;
+  color: #125359;
 }
 
 .formContainer {
@@ -728,6 +732,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   align-items: center;
   text-align: center;
   padding: 20px;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 #emailForm, #subjectForm, #contactText {
@@ -789,9 +794,11 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 
 .divider {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #125359;
   text-align: center;
   width: 90%;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #125359;
 }
 @media (min-width: 1080px) {
   .divider {
@@ -818,6 +825,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 
 .infoBox {
+  font-family: "Kumbh Sans", sans-serif;
   width: 300px;
   height: 200px;
   border: 1px white solid;
@@ -828,6 +836,12 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+}
+.infoBox a {
+  color: black;
+}
+.infoBox a:hover {
+  color: #ebd3cf;
 }
 
 .adress, .telephone, .email {

@@ -10,7 +10,6 @@
     }
     .left-container {
         border-right: 5px solid black;
-        padding-right: 5rem;
         @include mobile {
             border: none;
         }
@@ -19,11 +18,17 @@
 @include desktop {
     body {
         background-image: linear-gradient($blue-light, $pink-light);
+        .left-container{
+          width: 49%;
+        }
     }
 }
+
 .containerText{
     text-align: center;
     margin: 1em auto;
+    font-family:$font2;
+    color: $blue-dark;
 }
 
 // -----------CSS for Form---------------
@@ -33,7 +38,7 @@ $formBackgroundColor: #f7f7f7;
 $formBorderColor: #ccc;
 $formBorderRadius: 20px;
 $inputPadding: 10px;
-$buttonBgColor: #125359;
+$buttonBgColor: $blue-dark;
 $buttonTextColor: #fff;
 
 .formContainer {
@@ -42,6 +47,7 @@ $buttonTextColor: #fff;
   align-items: center;
   text-align: center;
   padding: 20px;
+  font-family: $font3;
 }
 
 #emailForm, #subjectForm, #contactText {
@@ -108,9 +114,12 @@ $buttonTextColor: #fff;
     @include desktop {
         border: none;
     }
+    font-family: $font3;
+    color: $blue-dark;
     text-align: center;
     width: 90%;
-    border-bottom: 5px solid black
+    border-bottom: 5px solid $blue-dark
+    
     
 }
 .imgContainer{
@@ -134,6 +143,7 @@ $buttonTextColor: #fff;
 }
 
 .infoBox{
+font-family: $font3;
 width: 300px;
 height: 200px;
 border: 1px white solid;
@@ -144,6 +154,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-bottom: 2rem;
+a{
+  color: black;
+  &:hover{
+    color: $grayish;
+  }
+}
 
 }
 .adress, .telephone, .email {
