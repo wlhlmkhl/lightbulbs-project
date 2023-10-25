@@ -7,36 +7,42 @@
     background-image: url(/assets/img/desktop-background.jpg);
   }
 
-  .catchphrase {
-    width: 8rem;
-    font-family: $font1;
-    font-size: 2rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
-    color: $pink-dark;
-    filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
-    
-    p {
-      margin: 0;
-    }
-    .catchphrase-row2 {
-      span {
-        font-size: 1.25rem;
-      }
-    }
-    .catchphrase-row3 {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    @include desktop {
-      display: none;
+  header {
+    a {
+      text-decoration: none;
     }
   }
 
+  .container_catchphrase {
+    display: flex;
+    justify-content: center;
 
 
+    .catchphrase {
+      width: 8rem;
+      font-family: $font1;
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      color: $pink-dark;
+      filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
+      
+      
+      .catchphrase-row2 {
+        span {
+          font-size: 1.25rem;
+        }
+      }
+      .catchphrase-row3 {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+        @include desktop {
+          display: none;
+        }
+      }
+  }
 
     .About_us_textbox {
       width: 100%;
@@ -54,12 +60,14 @@
 
       h3 {
         text-align: center;
-        font-family: $font1;
+        font-family: $font3;
+        color: $blue-dark;
       }
 
       p {
         text-align: center;
         margin: 10px;
+        font-family: $font3;
       }
     }
 
@@ -72,9 +80,9 @@
       h4 {
         width: 100%; 
         height: 40px;
-        font-family: $font1;
-        background: $pink-dark;
-        color: black; 
+        font-family: $font3;
+        background: $pink-light;
+        color: $blue-dark; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -132,11 +140,16 @@
           width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          align-content: center;
           margin-bottom: 1rem;
           padding-left: 1rem;
+          justify-content: center;
           
           
+          h5 {
+            font-family: $font3;
+            color: $blue-dark;
+          }
           
 
           @include desktop {
@@ -146,17 +159,21 @@
 
           .name {
             font-size: 16px;
-            font-style: italic;
+            font-style: $font3;
+            color: $blue-dark;
           }
       
           .information {
+            font-family: $font3;
             font-size: 16px;
             margin-right: 5rem;  
+            color: $blue-dark;
           }
   
           .contactMe {
             display: flex;
             width: 10rem;
+            
 
             :hover{
               font-size: 15px;
@@ -175,7 +192,7 @@
             }
 
             p {
-              color: black;
+              color: $blue-dark;
               font-size: 13px;
               font-family: $font2;
     

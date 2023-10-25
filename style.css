@@ -150,28 +150,31 @@ footer > p {
     background-image: url(/assets/img/desktop-background.jpg);
   }
 }
-.body_about_us .catchphrase {
+.body_about_us header a {
+  text-decoration: none;
+}
+.body_about_us .container_catchphrase {
+  display: flex;
+  justify-content: center;
+}
+.body_about_us .container_catchphrase .catchphrase {
   width: 8rem;
   font-family: "B612", sans-serif;
   font-size: 2rem;
   margin-top: 3rem;
-  margin-left: 3rem;
   margin-bottom: 2rem;
   color: #ff716f;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
 }
-.body_about_us .catchphrase p {
-  margin: 0;
-}
-.body_about_us .catchphrase .catchphrase-row2 span {
+.body_about_us .container_catchphrase .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
 }
-.body_about_us .catchphrase .catchphrase-row3 {
+.body_about_us .container_catchphrase .catchphrase .catchphrase-row3 {
   display: flex;
   justify-content: flex-end;
 }
 @media (min-width: 1080px) {
-  .body_about_us .catchphrase {
+  .body_about_us .container_catchphrase .catchphrase {
     display: none;
   }
 }
@@ -191,11 +194,13 @@ footer > p {
 }
 .body_about_us .About_us_textbox h3 {
   text-align: center;
-  font-family: "B612", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 .body_about_us .About_us_textbox p {
   text-align: center;
   margin: 10px;
+  font-family: "Kumbh Sans", sans-serif;
 }
 .body_about_us .employees_container {
   width: 100%;
@@ -206,9 +211,9 @@ footer > p {
 .body_about_us .employees_container h4 {
   width: 100%;
   height: 40px;
-  font-family: "B612", sans-serif;
-  background: #ff716f;
-  color: black;
+  font-family: "Kumbh Sans", sans-serif;
+  background: #f3a8a3;
+  color: #125359;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,9 +264,14 @@ footer > p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-content: center;
   margin-bottom: 1rem;
   padding-left: 1rem;
+  justify-content: center;
+}
+.body_about_us .employees_container .employees_box .col-2 h5 {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 @media (min-width: 1080px) {
   .body_about_us .employees_container .employees_box .col-2 {
@@ -270,11 +280,14 @@ footer > p {
 }
 .body_about_us .employees_container .employees_box .col-2 .name {
   font-size: 16px;
-  font-style: italic;
+  font-style: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 .body_about_us .employees_container .employees_box .col-2 .information {
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
   margin-right: 5rem;
+  color: #125359;
 }
 .body_about_us .employees_container .employees_box .col-2 .contactMe {
   display: flex;
@@ -293,7 +306,7 @@ footer > p {
   text-decoration: none;
 }
 .body_about_us .employees_container .employees_box .col-2 .contactMe p {
-  color: black;
+  color: #125359;
   font-size: 13px;
   font-family: "B612 Mono", monospace;
 }
