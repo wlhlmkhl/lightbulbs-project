@@ -144,13 +144,13 @@ footer > p {
 }
 
 .body_about_us {
-  background-image: url(/assets/img/mobile-background.jpg);
+  background-image: url(assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 1080px) {
   .body_about_us {
-    background-image: url(/assets/img/desktop-background.jpg);
+    background-image: url(assets/img/desktop-background.jpg);
   }
 }
 .body_about_us header a {
@@ -358,13 +358,13 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 
 .startpage {
-  background-image: url(/assets/img/mobile-background.jpg);
+  background-image: url(assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 1080px) {
   .startpage {
-    background-image: url(/assets/img/desktop-background.jpg);
+    background-image: url(assets/img/desktop-background.jpg);
   }
 }
 .startpage .about-text {
@@ -692,7 +692,7 @@ header #myLinks a icon:hover, header #myLinks a:hover {
 }
 
 .contact-page {
-  background-image: url(/assets/img/mobile-background.jpg);
+  background-image: url(assets/img/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
