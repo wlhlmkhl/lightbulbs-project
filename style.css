@@ -391,6 +391,9 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   text-decoration: none;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
+.startpage .main-container .cta a:hover {
+  background-color: #092b2f;
+}
 .startpage .main-container .catchphrase {
   width: 8rem;
   font-family: "B612", sans-serif;
@@ -516,6 +519,9 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
+.services-page main .contact-button button:hover {
+  background-color: #092b2f;
+}
 .services-page main .contact-button-desktop {
   display: none;
 }
@@ -537,6 +543,9 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
+}
+.services-page main .contact-button-desktop button:hover {
+  background-color: #092b2f;
 }
 
 .cases-page {
@@ -639,6 +648,9 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
 }
+.cases-page main .contact-button button:hover {
+  background-color: #092b2f;
+}
 .cases-page main .contact-button-desktop {
   display: none;
 }
@@ -660,6 +672,9 @@ header #myLinks a icon:hover, header #myLinks a:hover {
   font-size: 1.25rem;
   filter: drop-shadow(0 0 0.125rem #125359);
   width: 10rem;
+}
+.cases-page main .contact-button-desktop button:hover {
+  background-color: #092b2f;
 }
 
 .contact-page {
