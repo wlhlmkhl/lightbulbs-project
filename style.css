@@ -195,6 +195,7 @@ footer > p {
 .body_about_us .About_us_textbox h3 {
   text-align: center;
   font-family: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 .body_about_us .About_us_textbox p {
   text-align: center;
@@ -212,7 +213,7 @@ footer > p {
   height: 40px;
   font-family: "Kumbh Sans", sans-serif;
   background: #f3a8a3;
-  color: black;
+  color: #125359;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,6 +271,7 @@ footer > p {
 }
 .body_about_us .employees_container .employees_box .col-2 h5 {
   font-family: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 @media (min-width: 1080px) {
   .body_about_us .employees_container .employees_box .col-2 {
@@ -279,11 +281,13 @@ footer > p {
 .body_about_us .employees_container .employees_box .col-2 .name {
   font-size: 16px;
   font-style: "Kumbh Sans", sans-serif;
+  color: #125359;
 }
 .body_about_us .employees_container .employees_box .col-2 .information {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
   margin-right: 5rem;
+  color: #125359;
 }
 .body_about_us .employees_container .employees_box .col-2 .contactMe {
   display: flex;
@@ -302,7 +306,7 @@ footer > p {
   text-decoration: none;
 }
 .body_about_us .employees_container .employees_box .col-2 .contactMe p {
-  color: black;
+  color: #125359;
   font-size: 13px;
   font-family: "B612 Mono", monospace;
 }

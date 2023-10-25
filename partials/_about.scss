@@ -61,6 +61,7 @@
       h3 {
         text-align: center;
         font-family: $font3;
+        color: $blue-dark;
       }
 
       p {
@@ -81,7 +82,7 @@
         height: 40px;
         font-family: $font3;
         background: $pink-light;
-        color: black; 
+        color: $blue-dark; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,6 +148,7 @@
           
           h5 {
             font-family: $font3;
+            color: $blue-dark;
           }
           
 
@@ -158,17 +160,20 @@
           .name {
             font-size: 16px;
             font-style: $font3;
+            color: $blue-dark;
           }
       
           .information {
             font-family: $font3;
             font-size: 16px;
             margin-right: 5rem;  
+            color: $blue-dark;
           }
   
           .contactMe {
             display: flex;
             width: 10rem;
+            
 
             :hover{
               font-size: 15px;
@@ -187,7 +192,7 @@
             }
 
             p {
-              color: black;
+              color: $blue-dark;
               font-size: 13px;
               font-family: $font2;
     
