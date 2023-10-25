@@ -17,9 +17,7 @@
     color: $pink-dark;
     filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
     
-    p {
-      margin: 0;
-    }
+    
     .catchphrase-row2 {
       span {
         font-size: 1.25rem;
@@ -30,13 +28,10 @@
       justify-content: flex-end;
     }
 
-    @include desktop {
-      display: none;
+      @include desktop {
+        display: none;
+      }
     }
-  }
-
-
-
 
     .About_us_textbox {
       width: 100%;

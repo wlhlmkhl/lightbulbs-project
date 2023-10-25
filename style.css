@@ -157,9 +157,6 @@ footer > p {
   color: #ff716f;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
 }
-.body_about_us .catchphrase p {
-  margin: 0;
-}
 .body_about_us .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
 }
