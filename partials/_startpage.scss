@@ -38,6 +38,9 @@
         font-size: 1.25rem;
         text-decoration: none;
         filter: drop-shadow(0 0 0.125rem $blue-dark);
+        &:hover {
+          background-color: darken($blue-dark, 10%);
+        }
       }
     }
     .catchphrase {
