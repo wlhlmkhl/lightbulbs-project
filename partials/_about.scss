@@ -7,31 +7,37 @@
     background-image: url(/assets/img/desktop-background.jpg);
   }
 
-  .catchphrase {
-    width: 8rem;
-    font-family: $font1;
-    font-size: 2rem;
-    margin-top: 3rem;
-    margin-left: 11rem;
-    margin-bottom: 2rem;
-    color: $pink-dark;
-    filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
-    
-    
-    .catchphrase-row2 {
-      span {
-        font-size: 1.25rem;
-      }
-    }
-    .catchphrase-row3 {
-      display: flex;
-      justify-content: flex-end;
-    }
 
-      @include desktop {
-        display: none;
+  .container_catchphrase {
+    display: flex;
+    justify-content: center;
+
+
+    .catchphrase {
+      width: 8rem;
+      font-family: $font1;
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      color: $pink-dark;
+      filter: drop-shadow(0.25rem 0.25rem 0.25rem $pink-light);
+      
+      
+      .catchphrase-row2 {
+        span {
+          font-size: 1.25rem;
+        }
       }
-    }
+      .catchphrase-row3 {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+        @include desktop {
+          display: none;
+        }
+      }
+  }
 
     .About_us_textbox {
       width: 100%;

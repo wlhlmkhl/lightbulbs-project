@@ -150,25 +150,28 @@ footer > p {
     background-image: url(/assets/img/desktop-background.jpg);
   }
 }
-.body_about_us .catchphrase {
+.body_about_us .container_catchphrase {
+  display: flex;
+  justify-content: center;
+}
+.body_about_us .container_catchphrase .catchphrase {
   width: 8rem;
   font-family: "B612", sans-serif;
   font-size: 2rem;
   margin-top: 3rem;
-  margin-left: 11rem;
   margin-bottom: 2rem;
   color: #ff716f;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem #f3a8a3);
 }
-.body_about_us .catchphrase .catchphrase-row2 span {
+.body_about_us .container_catchphrase .catchphrase .catchphrase-row2 span {
   font-size: 1.25rem;
 }
-.body_about_us .catchphrase .catchphrase-row3 {
+.body_about_us .container_catchphrase .catchphrase .catchphrase-row3 {
   display: flex;
   justify-content: flex-end;
 }
 @media (min-width: 1080px) {
-  .body_about_us .catchphrase {
+  .body_about_us .container_catchphrase .catchphrase {
     display: none;
   }
 }
