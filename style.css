@@ -25,6 +25,9 @@ header {
     display: none;
   }
 }
+header a {
+  text-decoration: none;
+}
 header h1 {
   font-family: "B612 Mono", monospace;
   color: #125359;
